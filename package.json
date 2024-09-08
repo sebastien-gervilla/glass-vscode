@@ -1,0 +1,53 @@
+{
+  "name": "glass-vscode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./"
+  },
+  "keywords": [
+    "glass",
+    "extension",
+    "vscode"
+  ],
+  "author": "",
+  "license": "ISC",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "glass",
+        "aliases": [
+          "glass"
+        ],
+        "extensions": [
+          ".glass"
+        ],
+        "configuration": "./glass.configuration.json"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/vscode": "^1.50.0",
+    "@vscode/test-electron": "^2.4.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastien-gervilla/glass-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastien-gervilla/glass-vscode/issues"
+  }
+}
