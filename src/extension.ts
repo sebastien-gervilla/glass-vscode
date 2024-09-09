@@ -1,3 +1,4 @@
+import { existsSync } from 'fs';
 import * as path from 'path';
 import { workspace, ExtensionContext } from 'vscode';
 import { LanguageClient, LanguageClientOptions, ServerOptions, TransportKind } from 'vscode-languageclient/node';
@@ -6,14 +7,13 @@ let client: LanguageClient;
 
 export function activate(context: ExtensionContext) {
     // Define the path to the server executable
-    console.log("seifgzoi");
+    const languageServerBinaryPath = path.join('server', 'glass-language-server');
+    if (!existsSync(languageServerBinaryPath))
+        throw new Error("Binary not found in " + languageServerBinaryPath)
 
     let serverModule = context.asAbsolutePath(
-        path.join('server', 'glass-language-server') // Ensure your Go server binary is placed here
+        path.join('server', 'glass-language-server')
     );
-
-    console.log(path.join('server', 'glass-language-server'));
-
 
     // Server options
     let serverOptions: ServerOptions = {
