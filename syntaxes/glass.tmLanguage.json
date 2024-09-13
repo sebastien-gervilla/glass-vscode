@@ -11,7 +11,7 @@
         },
         {
             "name": "keyword.control.glass",
-            "match": "\\b(if|else|for|while|return)\\b"
+            "match": "\\b(if|else|for|while|return|import|export)\\b"
         },
         {
             "name": "keyword.operator.glass",
