@@ -29,6 +29,13 @@
         ],
         "configuration": "./glass.configuration.json"
       }
+    ],
+    "grammars": [
+      {
+        "language": "glass",
+        "scopeName": "source.glass",
+        "path": "./syntaxes/glass.tmLanguage.json"
+      }
     ]
   },
   "engines": {
