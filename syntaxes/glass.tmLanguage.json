@@ -7,7 +7,7 @@
         },
         {
             "name": "storage.type.glass",
-            "match": "\\b(let|function|true|false)\\b"
+            "match": "\\b(let|fn|true|false)\\b"
         },
         {
             "name": "keyword.control.glass",
