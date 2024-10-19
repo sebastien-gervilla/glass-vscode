@@ -1,7 +1,7 @@
 {
   "name": "glass-vscode",
   "version": "1.0.0",
-  "description": "",
+  "description": "Glass's vscode extension",
   "main": "out/extension.js",
   "scripts": {
     "compile": "tsc -p ./",
